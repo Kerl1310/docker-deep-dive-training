@@ -27,11 +27,11 @@ We can also create stages in our dockerfiles. Earlier stages and their layers ar
 Remember to record your results at each stage!
 
 ## References
-https://docs.docker.com/build/guide/build-args/
+[Build Arguments](https://docs.docker.com/build/guide/build-args/)
 
-https://docs.docker.com/build/building/variables/
+[Variables](https://docs.docker.com/build/building/variables/)
 
-https://docs.docker.com/reference/cli/docker/image/history/
+[Image History](https://docs.docker.com/reference/cli/docker/image/history/)
 
-https://docs.docker.com/build/building/multi-stage/
+[Multi-Stage Builds](https://docs.docker.com/build/building/multi-stage/)
 

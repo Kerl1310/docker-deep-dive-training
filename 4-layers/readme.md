@@ -26,11 +26,11 @@ The number of instructions also matters, more instructions = more layers = bigge
 - Build it again, record the number of layers pulled from cache
 
 ### Stretch
-- Adapt your dockerfile.better to have fewer layers (hint, look at how files are copied)
+- Adapt your `dockerfile.better` to have fewer layers (hint, look at how files are copied)
 - Record this in the results
 
 ### Super stretch
-1. Adapt your dockerfile.better to have even fewer layers (hint, look at how apk and npm commands are used)
+1. Adapt your `dockerfile.better` to have even fewer layers (hint, look at how apk and npm commands are used)
    - record the number of layers in the results
 2. Building (or pulling) similar images can use cached layers too, but only if built on the same build context / machine
    - clean your build cache then 

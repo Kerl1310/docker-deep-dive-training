@@ -7,13 +7,13 @@ Image is too big; takes too long to download or spin up new containers
 Using the right base image
 
 ## Detail 
-The trick is build in ONLY what you need. Most docker images are based on a linux distribution.
-There are many different flavours of linux os and combinations of primary langue the image is tailored for.
+The trick is build in ONLY what you need. Most docker images are based on a Linux distribution.
+There are many different flavours of Linux OS and combinations of primary language the image is tailored for.
 
 Fully featured < — > skinny
 
 ## Exercise
-build the original dockerfile and note the size of the image it creates
+Build the original dockerfile and note the size of the image it creates
 
 ```shell
 docker build -t docker-deep-dive/ex2/original -f Dockerfile.original .
