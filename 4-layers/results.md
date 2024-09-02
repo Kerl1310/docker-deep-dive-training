@@ -6,5 +6,5 @@ Original build layers: 16
 Original rebuild; layers from cache: 15
 Original with updated rakefile; layers from cache: 10
 
-Better build layers: 11
-Better build; layers from cache: 10
+Better build layers: 8
+Better build; layers from cache: 7
