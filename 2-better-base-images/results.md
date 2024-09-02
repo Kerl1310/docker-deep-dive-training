@@ -2,6 +2,6 @@
 
 Commit your data here
 
-Original build size:
+Original build size: 995.36MB
 
-New build size:
+New build size: 45.55MB

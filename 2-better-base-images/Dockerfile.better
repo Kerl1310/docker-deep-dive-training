@@ -1,0 +1,3 @@
+FROM chainguard/ruby:latest
+
+CMD ["ruby", "--version"]
