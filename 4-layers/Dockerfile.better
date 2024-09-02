@@ -1,0 +1,23 @@
+FROM ruby:alpine
+
+RUN apk update
+RUN apk add --no-cache alpine-sdk libmagic \
+  nodejs npm postgresql-dev
+RUN apk add chromium aws-cli jq
+RUN rm /var/cache/apk/*
+
+RUN apk -U upgrade
+
+RUN npm i -g npm@9 serverless@3
+
+ENV GEM_HOME="/usr/local/bundle" PATH=$GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
+
+# selectively copy the tests to the image's working directory
+COPY entrypoint.sh /usr/local/bin/
+COPY tests/ Rakefile /tests/
+
+# Install gems
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
+
+ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
